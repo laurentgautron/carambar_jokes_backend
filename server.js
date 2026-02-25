@@ -1,5 +1,6 @@
 import app from "./app.js";
 import sequelize from "./src/config/database.js";
+import seedJokes from "./src/seed/seedJokes.js";
 
 const port = process.env.PORT || 3000;
 
@@ -11,6 +12,8 @@ const startserver = async () => {
         await sequelize.sync()
             .then(() => console.log('BDD synchronisée'))
             .catch(error => console.log(`La BDD n'est pas synchronisée: ${error}`));
+
+        await seedJokes();
 
         app.listen(port, "0.0.0.0", () => console.log(`Serveur démarré sur le port ${port}`));
     } catch (error) {
