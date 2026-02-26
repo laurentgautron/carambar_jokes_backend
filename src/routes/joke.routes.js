@@ -5,7 +5,7 @@ const router = Router();
 
 /**
  * @swagger
- * /jokes:
+ * /api/v1/jokes:
  *   get:
  *     summary: Récupère toutes les blagues
  *     responses:
@@ -16,7 +16,7 @@ router.get('/', getAllJokes);
 
 /**
  * @swagger
- * /jokes/random:
+ * /api/v1/jokes/random:
  *   get:
  *     summary: Récupère une blague aléatoire
  *     responses:
@@ -27,7 +27,7 @@ router.get('/random', getRandomJoke);
 
 /**
  * @swagger
- * /jokes/{id}:
+ * /api/V1/jokes/{id}:
  *   get:
  *     summary: Récupère une blague par son id
  *     parameters:
@@ -47,7 +47,7 @@ router.get('/:id', getOneJoke);
 
 /**
  * @swagger
- * /jokes:
+ * /api/v1/jokes:
  *   post:
  *     summary: Ajoute une nouvelle blague
  *     requestBody:
