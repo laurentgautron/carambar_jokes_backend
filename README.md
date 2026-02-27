@@ -16,4 +16,17 @@ L’API est versionnée et permet de créer, consulter et récupérer des blague
 
 - **Repo FrontEnd (GitHub)** : [https://github.com/laurentgautron/carambar_jokes_frontend](https://github.com/laurentgautron/carambar_jokes_frontend)  
 - **Documentation Swagger** : [https://carambar-jokes-j6nh.onrender.com/api-docs/](https://carambar-jokes-j6nh.onrender.com/api-docs/)  
-- **Backend déployé sur Render** : [https://carambar-jokes-j6nh.onrender.com](https://carambar-jokes-j6nh.onrender.com)  
+- **Backend déployé sur Render** : [https://carambar-jokes-j6nh.onrender.com](https://carambar-jokes-j6nh.onrender.com)
+
+---
+
+## 📝 Routes disponibles
+
+| Route | Méthode | Description |
+|-------|---------|-------------|
+| `/blagues` | GET | Récupère toutes les blagues |
+| `/blagues/:id` | GET | Récupère une blague spécifique par ID |
+| `/blagues/random` | GET | Récupère une blague aléatoire |
+| `/blagues` | POST | Ajoute une nouvelle blague (via Postman ou autre client REST) |
+
+> Testez les endpoints directement via Swagger : [Swagger UI](https://carambar-jokes-j6nh.onrender.com/api-docs/)
