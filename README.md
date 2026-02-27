@@ -27,6 +27,6 @@ L’API est versionnée et permet de créer, consulter et récupérer des blague
 | `/api/v1/jokes` | GET | Récupère toutes les blagues |
 | `/api/v1/jokes/id` | GET | Récupère une blague spécifique par ID |
 | `/api/v1/jokes/random` | GET | Récupère une blague aléatoire |
-| `/api/v1/jokes` | POST | Ajoute une nouvelle blague (via Postman ou autre client REST) |
+| `/api/v1/jokes` | POST | Ajoute une nouvelle blague |
 
 > Testez les endpoints directement via Swagger : [Swagger UI](https://carambar-jokes-j6nh.onrender.com/api-docs/)
